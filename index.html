@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- Die 3 Meta-Tags oben *müssen* zuerst im head stehen; jeglicher sonstiger head-Inhalt muss *nach* diesen Tags kommen -->
+    <title>Bootstrap-Basis-Vorlage</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Costum -->
+    <link rel="stylesheet" href="css/costum.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <!-- Titel und Schalter werden für eine bessere mobile Ansicht zusammengefasst -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Navigation ein-/ausblenden</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand band-title" href="#">Three Days Grace</a>
+                </div>
+
+                <!-- Alle Navigationslinks, Formulare und anderer Inhalt werden hier zusammengefasst und können dann ein- und ausgeblendet werden -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home <span class="sr-only">(aktuell)</span></a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Tour</a></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">Photos</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Gear</a></li>
+                        <li class="hide-list-element"><a href="#">Community</a></li>
+                        <li class="hide-list-element"><a href="#">Street Team</a></li>
+                        <li class="hide-list-element"><a href="#">Shop</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right hide-list-element">
+                        <li class="member">Are you a Member? </li>
+                        <li><a href="#" data-toggle="modal" data-target="#meinModal-2">Sign Up</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#meinModal">Login</a></li>
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <p class="text-center">
+            Welcome to the new Three Days Grace website! Current members should have received an email with instructions for resetting your password.
+            If you haven’t, you can <a href="#">click here</a> to do that. New members can sign up using the link in the top right.
+        </p>
+    </header>
+    <div class="jumbotron">
+        <div class="teaser-bg"></div>
+    </div>
+    <main class="container content">
+        <h1>Latest News</h1>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="imgs/news-1.png" alt="news-1">
+                    <div class="caption">
+                        <span class="date">Aug 18 2017</span>
+                        <h3>3DG Studio Update #2</h3>
+                        <p>
+                            Three Days Grace are back in the studio for the next album, and have another update!
+                            Be the first to know about studio updates, new music,
+                            and concert presales by joining the 3DG Community HERE.
+                        </p>
+                        <div class="read-more">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <a href="#">Share</a>
+                        <a href="#"> 6 Likes</a>
+                        <a href="#"> 2 Comments</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="imgs/news-2.png" alt="news-2">
+                    <div class="caption">
+                        <span class="date">Aug 01 2017</span>
+                        <h3>3DG July 2017 Studio Update</h3>
+                        <p>
+                            Three Days Grace finished up their Human World Tour, and are back in the studio for the next album.
+                            Here’s an update from the studio!Be the first to know about studio updates, new music,
+                            and concert presales by joining the 3DG Community HERE.
+                        </p>
+                        <div class="read-more">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <a href="#">Share</a>
+                        <a href="#"> 6 Likes</a>
+                        <a href="#"> 2 Comments</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="imgs/news-3.png" alt="news-3">
+                    <div class="caption">
+                        <span class="date">Jun 22 2017</span>
+                        <h3>Vote on 3DG’S set lists</h3>
+                        <p>
+                            If you have tickets to an upcoming Three Days Grace show in Warsaw, Gdansk, Minsk,
+                            or St. Petersburg, you can help decide the band’s set list! 🇵🇱 🇧🇾 🇷🇺
+                        </p>
+                        <div class="read-more">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <a href="#">Share</a>
+                        <a href="#"> 6 Likes</a>
+                        <a href="#"> 2 Comments</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="imgs/news-4.png" alt="news-1">
+                    <div class="caption">
+                        <span class="date">Apr 12 2017</span>
+                        <h3>New Show: Plovdiv,<br> Buldgaria | July 1</h3>
+                        <p>
+                            Three Days Grace are performing at Hills Of Rock Plovdiv Music Festival in Plovdiv,
+                            Bulgaria on July 1. Tickets are now on sale HERE.
+                        </p>
+                        <div class="read-more">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <a href="#">Share</a>
+                        <a href="#"> 6 Likes</a>
+                        <a href="#"> 2 Comments</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="imgs/news-5.jpeg" alt="news-2">
+                    <div class="caption">
+                        <span class="date">Aug 01 2017</span>
+                        <h3>3DG July 2017 Studio Update</h3>
+                        <p>
+                            Three Days Grace finished up their Human World Tour, and are back in the studio for the next album.
+                            Here’s an update from the studio!Be the first to know about studio updates, new music,
+                            and concert presales by joining the 3DG Community HERE.
+                        </p>
+                        <div class="read-more">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <a href="#">Share</a>
+                        <a href="#"> 6 Likes</a>
+                        <a href="#"> 2 Comments</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="imgs/news-6.png" alt="news-3">
+                    <div class="caption">
+                        <span class="date">Jun 22 2017</span>
+                        <h3>Vote on 3DG’S set lists</h3>
+                        <p>
+                            If you have tickets to an upcoming Three Days Grace show in Warsaw, Gdansk, Minsk,
+                            or St. Petersburg, you can help decide the band’s set list! 🇵🇱 🇧🇾 🇷🇺
+                        </p>
+                        <div class="read-more">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <a href="#">Share</a>
+                        <a href="#"> 6 Likes</a>
+                        <a href="#"> 2 Comments</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container text-center text-uppercase">
+            <ul class="footer-list">
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Built on stagebloc</a></li>
+                <li><a href="#">Site by fade agency</a></li>
+            </ul>
+            <p>
+                &copy; 2017 Three Days Grace All rights reserved
+            </p>
+        </div>
+    </footer>
+
+    <!-- Modal Login -->
+    <div class="modal fade" id="meinModal" tabindex="-1" role="dialog" aria-labelledby="meinModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Schließen"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title" id="meinModalLabel">Login</h2>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal ">
+                        <div class="form-group">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <input type="email" class="form-control" placeholder="Email or Username">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Login</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Forgot Password?</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Sign Up -->
+    <div class="modal fade" id="meinModal-2" tabindex="-1" role="dialog" aria-labelledby="meinModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Schließen"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title" id="meinModalLabel">Sign Up</h2>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal ">
+                        <div class="form-group">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <input type="text" class="form-control" placeholder="Username">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <input type="date" class="form-control" placeholder="Username">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- jQuery (wird für Bootstrap JavaScript-Plugins benötigt) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Binde alle kompilierten Plugins zusammen ein (wie hier unten) oder such dir einzelne Dateien nach Bedarf aus -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

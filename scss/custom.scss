@@ -1,0 +1,253 @@
+$orange: #e2561c;
+$white: #ffffff;
+$font-normal: 20px;
+$font-medium: 16px;
+
+main, footer{
+  display: block;
+}
+
+body {
+  font-family: "Oswald",Helvetica,Arial,sans-serif;
+  font-size: $font-normal;
+  line-height: 28px;
+  color: $white;
+  background-color: #000;
+  font-weight: 300;
+  padding-top: 60px;
+  height: 100%;
+}
+
+.navbar-inverse{
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
+  font-size: $font-medium;
+  .navbar-nav{
+    li{
+      a{
+        text-transform: uppercase;
+        color: $white;
+        padding: 19px 6px 0 6px;
+        line-height: 22px;
+        &:hover{
+          color: #5a787d;
+        }
+        &:focus{
+          color: $orange;
+          outline: none;
+          &:hover{
+            color: #5a787d;
+          }
+        }
+      }
+    }
+  }
+  .navbar-right{
+    .member{
+      padding: 15px 6px 0px 6px;
+      font-size: $font-medium;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #939393;
+    }
+    li{
+      a{
+        color: $orange;
+      }
+    }
+  }
+  .band-title{
+    display: none;
+  }
+}
+header{
+  p{
+    max-width: 985px;
+    margin: 20px auto;
+    font-weight: 300;
+    font-size: $font-normal;
+    padding: 0 10px;
+    a{
+      color: $orange;
+      &:hover{
+        color: $white;
+      }
+    }
+  }
+}
+
+.teaser-bg{
+  background: url(../imgs/teaser_bg.jpeg) no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+  margin: -48px 0;
+}
+
+.content{
+  h1{
+    font-size: 40px;
+    color: $orange;
+    margin-bottom: 30px;
+  }
+  .thumbnail{
+    border: none;
+    background-color: #151515;
+    .caption{
+      padding: 20px;
+      border-bottom: 1px solid #000;
+      .date{
+        color: $orange;
+        font-weight: 300;
+        font-size: $font-normal;
+        text-transform: uppercase;
+      }
+      h3{
+        color: #5a787d;
+      }
+      p{
+        color: #ccc;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 26px;
+        margin-bottom: 11px;
+      }
+      .read-more{
+        a{
+          font-size: $font-medium;
+          font-weight: 300;
+          color: #5a787d;
+          text-transform: uppercase;
+        }
+        a:hover{
+          color: $orange;
+        }
+      }
+    }
+    .social{
+      padding:10px 20px;
+      a{
+        font-size: $font-medium;
+        font-weight: 300;
+        color: #5a787d;
+        text-transform: uppercase;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+footer{
+  background-color: #000;
+  border-top: 1px solid #181818;
+  .footer-list{
+    li{
+      list-style: none;
+      display: inline-block;
+      margin: 10px 15px;
+      a{
+        color: #5a787d;
+        &:hover{
+          color: $orange;
+          text-decoration: none;
+        }
+      }
+
+      &:first-child{
+        margin-left: 0;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+  p{
+    color: #515151;
+  }
+}
+.modal-title{
+  font-size: 28px;
+  line-height: 34px;
+  color: #848689;
+}
+.close{
+  position: relative;
+  top: -12px;
+  font-size: 60px;
+}
+.modal-body{
+  padding: 30px;
+  .form-control{
+    padding: 20px;
+    height: 60px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px){
+  .teaser-bg {
+    height: 500px;
+  }
+}
+
+@media (max-width: 467px){
+  .teaser-bg {
+    height: 300px;
+  }
+}
+
+@media (max-width: 359px){
+  .teaser-bg {
+    height: 150px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,.navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in{
+    display:block !important;
+  }
+  .navbar-inverse{
+    .band-title{
+      display: block;
+    }
+  }
+  .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .hide-list-element{
+    display: none !important;
+  }
+}
